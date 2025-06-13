@@ -1,0 +1,9 @@
+.mainbodi {
+    background-color: white;
+}
+
+.bodi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
