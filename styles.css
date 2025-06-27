@@ -1,9 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
 .mainbodi {
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .bodi {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.centro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    padding: 10px;
+    /*border: 1px solid #ccc;*/
+    word-wrap: break-word;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.textu {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.content {
+    max-width: 800px;
+    height: 300vh; 
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.intro, .tutorial {
+    margin-bottom: 20px;
+}
+
+.tutorial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 40vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+.section-title {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 5px; /* Reduced margin */
+}
+
+.textucentro {
+    font-size: 1.2rem;
+    line-height: 1.4; /* Reduced line height */
+    text-align: center;
+    margin-bottom: 10px; /* Added margin to control spacing */
+}
+
+p {
+    font-size: 1.3rem;
+    margin: 5px 0; /* Reduced vertical spacing */
+    text-align: center;
+}
+
+code {
+    background-color: #eee;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+.code-box {
+    background-color: #333; /* Black background */
+    color: white; /* White text for contrast */
+    padding: 10px; /* Increased padding for better readability */
+    border-radius: 4px; /* Added rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+    margin: 10px auto; /* Centered and added margin */
+    width: auto; /* Adjust width dynamically */
+    max-width: 100%; /* Prevent overflow */
+    text-align: left; /* Align text to the left */
+   
+}
+
+.code-box code {
+    background-color: transparent; /* Remove background from <code> */
+    color: inherit; /* Inherit text color */
+    font-size: 1.1rem; /* Slightly larger font */
+    white-space: pre-wrap; /* Wrap text if necessary */
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
 }
