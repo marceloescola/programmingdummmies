@@ -18,26 +18,87 @@
                 simple script.</p>
         </section>
         <section class="tutorial">
+            <!--Hello world-->
             <h2 class="section-title">Hello World!</h2>
             <p class="textucentro">First of all, you MUST print your first "Hello World". Else you'll be cursed in
                 programming forever.</p>
+            <h3>Create the project</h3>
             <p class="textucentro">To do your first "Hello World", you need to install Python, which is the language we
                 are using in this article (there are multiple tutorials for that, so we won't teach how to install).</p>
             <p class="textucentro">Now open Visual Studio Code or any other code editor, and create a file called
-                <code>main.py</code>. Into it you will insert</p>
+                <code>main.py</code>. </p>
+                <h3>The code</h3>
+                <p>Now to make the print we will do the code bellow. Important to wrap the value into quotes as it isnt a variable(Variables are explained later)</p>
             <div class="code-box">  
                 <pre><code>print("Hello World!")</code></pre>
             </div>
             <p>That says to the program to say "Hello World!", now open a terminal on your pc or code editor.
             </p>
-            <p>After running the script, you should see the output "Hello World!" displayed in the terminal. Here's an example:</p>
+            <p>After running the script, you should see the output "Hello World!" displayed in the terminal. 
+                <h3>How to run this????</h3>Here's an example of how to open the terminal:</p>
             <img src="pics/print1.png" alt="Hello World Output" style="width: 400px; height: auto;">
-            <p>Then type <code>python3 main.py</code> to run the file you made with python</p>
+            <p>Then type <code>python3 main.py</code> to run the file you made with python. Now you have your first "Hello World!".</p>
+            <p>Now make a another project in another folder and open it. Because if you delete your first Hello World you will be cursed forever.</p>
+            
+            <!--Variables-->
+            <h2 class="section-title">Variables</h2>
+            <p>Now we are getting into variables! They are essential. You use a variable basically to store any value. Theres also 4 types of variables we will talk bout
+                soon.
+            </p>
+            <h3>How to set a variable?</h3>
+            <p>We will use python. To set a variable in python all you have to do is put the name of the variable, a equal sign, and the value. Because
+                python is very simples.
+                <div class="code-box">
+                <pre><code>myVariable = "myValue"</code></pre>
+                </div>
+                Now you can print this variable like we did with hello world but without quotes, because to use a variable you just need
+                to put its name without quotes.
+                <div class="code-box">
+                    <pre><code>print(myVariable)</code></pre>
+                </div>
+                Tcharam! </br>
+                You can also change a variable value after its creation, just do it like u did to set it originally
+                <div class="code-box">
+                    <pre><code>myVariable = "myNewValue"</code></pre>
+                </div>
+                <h3>Types of variables</h3>
+                <p>You probally noticed that we wrapped the value from the variable on quotes, and that because there are different types of variables</p>
+                <p><strong>Here are the four main types of variables in Python:</strong></p>
+                <ul>
+                    <li><strong>String:</strong> Text values enclosed in quotes. Example: <code>myString = "Hello"</code></li>
+                    <li><strong>Integer:</strong> Whole numbers. Example: <code>myInt = 10</code></li>
+                    <li><strong>Float:</strong> Decimal numbers. Example: <code>myFloat = 3.14</code></li>
+                    <li><strong>Boolean:</strong> True or False values. Example: <code>myBool = True</code></li>
+                </ul>
+                
+            <h3>Bonus</h3>
+            <p>I think its important to say that variables can have any value. A example to open your mind is how inputs work. To do a input we use
+                <div class="code-box">
+                    <pre><code>name = input('What is your name?')</code></pre>
+                </div>
+            We "used input()" to capture the user input, all though we stored it into a variable, because else it would be a useless input. Now the value the user
+            typed is inside the variable "name"
+            </p>
+            </p>
+        <!--Conditionals-->
+
+        <h2 class="section-title">Conditionals</h2>
+        <p>Also very important fundamental that you will use everyday. A conditional is used to do something in case of something. Pseudo-example: If name is equal to
+            Jane then allow acess.
+
+            <h3>How to use conditionals</h3>
+            You are going to use <code>If {condition} {signal} {condition}: {action}</code>
+            For example, lets say we have have a input to the variable fruit and we want to say " is yellow" if the fruit is banana
+            <div class="code-box">
+                <pre><code>fruit = input("What is you favorite fruit?")
+
+if fruit == "banana":
+    print("Is yellow")      </code></pre>
+            </div>
+            Test it, it will ask you a fruit and if it is banana it will say it is yellow
+        </p>
         </section>
     </main>
-    <footer class="footer">
-        <p>&copy; 2025 Programming Basics for Dummies</p>
-    </footer>
 </body>
 
 </html>

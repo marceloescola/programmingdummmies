@@ -4,6 +4,10 @@ body {
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .mainbodi {
@@ -47,7 +51,6 @@ body {
 
 .content {
     max-width: 800px;
-    height: 300vh; 
     padding: 20px;
     margin: 20px auto;
     background-color: #fff;
@@ -65,27 +68,20 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 40vh; /* Full viewport height */
-    margin: 0; /* Remove default margin */
+    margin: 0;
 }
 
 .section-title {
     font-size: 2rem;
     color: #4CAF50;
-    margin-bottom: 5px; /* Reduced margin */
+    margin-bottom: 5px;
 }
 
-.textucentro {
+.textucentro, p {
     font-size: 1.2rem;
-    line-height: 1.4; /* Reduced line height */
+    line-height: 1.4;
     text-align: center;
-    margin-bottom: 10px; /* Added margin to control spacing */
-}
-
-p {
-    font-size: 1.3rem;
-    margin: 5px 0; /* Reduced vertical spacing */
-    text-align: center;
+    margin: 10px 0;
 }
 
 code {
@@ -96,23 +92,27 @@ code {
 }
 
 .code-box {
-    background-color: #333; /* Black background */
-    color: white; /* White text for contrast */
-    padding: 10px; /* Increased padding for better readability */
-    border-radius: 4px; /* Added rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
-    margin: 10px auto; /* Centered and added margin */
-    width: auto; /* Adjust width dynamically */
-    max-width: 100%; /* Prevent overflow */
-    text-align: left; /* Align text to the left */
-   
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px auto;
+    max-width: 100%;
+    text-align: left;
 }
 
 .code-box code {
-    background-color: transparent; /* Remove background from <code> */
-    color: inherit; /* Inherit text color */
-    font-size: 1.1rem; /* Slightly larger font */
-    white-space: pre-wrap; /* Wrap text if necessary */
+    background-color: transparent;
+    color: inherit;
+    font-size: 1.1rem;
+    white-space: pre-wrap;
+}
+
+.responsive-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }
 
 .footer {
